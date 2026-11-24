@@ -1,0 +1,8 @@
+name = "house-of-zar"
+pages_build_output_dir = "public"
+compatibility_date = "2026-11-24"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "house-of-zar-db"
+database_id = "REPLACE_WITH_YOUR_D1_DATABASE_ID"

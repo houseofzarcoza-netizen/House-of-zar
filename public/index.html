@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#123b78"><meta name="description" content="House of Zar — premium kitchenware and home appliances.">
+  <title>House of Zar | Kitchenware & Home Appliances</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<div id="notice" class="notice-bar" role="status" aria-live="polite"></div>
+<header class="site-header">
+  <a class="brand" href="/" aria-label="House of Zar home"><span class="brand-mark">HZ</span><span><strong>HOUSE OF ZAR</strong><small>KITCHEN & HOME</small></span></a>
+  <nav><a href="#shop">Shop</a><a href="#categories">Categories</a><a href="#about">About</a></nav>
+  <button id="cart-toggle" class="cart-button" aria-label="Open shopping bag">Bag <span id="cart-count">0</span></button>
+</header>
+<main>
+  <section class="hero">
+    <div class="hero-copy"><p class="eyebrow">THOUGHTFUL TOOLS FOR EVERY HOME</p><h1>Make every day<br><em>better in the kitchen.</em></h1><p>Discover considered kitchenware and modern appliances for cooking, serving and living well.</p><a class="primary-button" href="#shop">Explore the collection <span>→</span></a><p class="hero-note">Worldwide shopping · Prices in USD</p></div>
+    <div class="hero-art" aria-label="Kitchen cookware display"><div class="art-circle"></div><div class="art-card"><span>THE EVERYDAY EDIT</span><b>Made for<br>your kitchen.</b><small>HOUSE OF ZAR</small></div></div>
+  </section>
+  <section id="categories" class="section categories-section"><div class="section-heading"><div><p class="eyebrow">EXPLORE BY CATEGORY</p><h2>Find your kitchen essentials</h2></div><p>Useful pieces, selected for everyday living.</p></div>
+    <div class="category-grid">
+      <button data-category="Cutlery" class="category-tile"><span>01</span><b>Cutlery & knives</b><small>Sets, knives and serving tools</small></button>
+      <button data-category="Cookware" class="category-tile"><span>02</span><b>Pots & pans</b><small>Cookware for every recipe</small></button>
+      <button data-category="Dinnerware" class="category-tile"><span>03</span><b>Dinnerware</b><small>Plates, cups and glassware</small></button>
+      <button data-category="Appliances" class="category-tile"><span>04</span><b>Kitchen appliances</b><small>Blenders, kettles and more</small></button>
+      <button data-category="Small appliances" class="category-tile"><span>05</span><b>Small appliances</b><small>Everyday kitchen helpers</small></button>
+      <button data-category="Accessories" class="category-tile"><span>06</span><b>Kitchen accessories</b><small>Finishing touches</small></button>
+    </div>
+  </section>
+  <section id="shop" class="section shop-section"><div class="section-heading"><div><p class="eyebrow">THE HOUSE OF ZAR COLLECTION</p><h2>Shop the collection</h2></div><div class="shop-controls"><input id="product-search" type="search" placeholder="Search kitchen products" aria-label="Search products"><select id="category-filter" aria-label="Filter by category"><option value="">All categories</option><option>Cutlery</option><option>Cookware</option><option>Dinnerware</option><option>Appliances</option><option>Small appliances</option><option>Accessories</option></select></div></div>
+    <div id="product-grid" class="product-grid"><div class="empty-state"><div class="empty-icon">HZ</div><h3>Your collection is being prepared.</h3><p>New kitchenware and appliances are arriving soon. Please check back shortly.</p></div></div>
+    <p id="catalog-status" class="catalog-status"></p>
+  </section>
+  <section id="about" class="about-section"><div><p class="eyebrow">THE HOUSE OF ZAR STANDARD</p><h2>Practical beauty.<br><em>Everyday quality.</em></h2></div><p>House of Zar brings together kitchenware and home appliances chosen to make everyday routines feel a little more considered. Product availability and delivery options depend on your destination.</p></section>
+</main>
+<footer><a class="brand footer-brand" href="/"><span class="brand-mark">HZ</span><span><strong>HOUSE OF ZAR</strong><small>KITCHEN & HOME</small></span></a><p>Kitchenware & home appliances · Worldwide · USD ($)</p><p>© <span id="year"></span> House of Zar</p></footer>
+<div id="cart-drawer" class="drawer" aria-hidden="true"><div class="drawer-panel"><div class="drawer-heading"><h2>Your bag</h2><button id="cart-close" aria-label="Close bag">×</button></div><div id="cart-items" class="cart-items"><p>Your bag is empty.</p></div><div class="cart-total"><span>Subtotal</span><strong id="cart-subtotal">$0.00</strong></div><button class="primary-button checkout-button" id="checkout-button" disabled>Continue to checkout</button><p class="checkout-note">Secure payment by Stripe. Shipping is added at checkout.</p></div></div>
+<script src="/app.js" defer></script>
+</body></html>
